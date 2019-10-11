@@ -32,6 +32,7 @@ $(document).ready(() => {
 
   const populateSuggestions = (videos) => {
     // we loop through the videos using a for-of loop
+    $('.suggest-list').text('');
     for (video of videos) {
       // create an image link wrapper for each related videos
       // it is important to note that the videoId value is being set in the link as a data attribute
